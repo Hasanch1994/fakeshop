@@ -1,7 +1,7 @@
-import PageLoading from "@/components/common/PageLoading";
+import MainSkeleton from "@/components/skeletons/MainSkeleton";
 
 const Loading = () => {
-  return <PageLoading />;
+  return <MainSkeleton />;
 };
 
 export default Loading;

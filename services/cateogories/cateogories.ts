@@ -6,7 +6,7 @@ const baseURL = process.env.BASEURL;
 export const get_all_categories = async (): Promise<categoriesType[]> => {
   try {
     const res = await fetch(`${baseURL}/categories`, {
-      cache: "force-cache",
+      cache: "no-cache",
       method: "GET",
     });
     const data: categoriesType[] = await res.json();

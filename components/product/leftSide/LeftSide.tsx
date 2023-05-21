@@ -13,9 +13,9 @@ const LeftSide = ({ product }: Props) => {
   };
 
   return (
-    <div className="flex flex-col gap-y-5 w-1/2 px-14 py-6">
+    <div className="flex flex-col gap-y-2 md:gap-y-5 w-full md:w-1/2 px-8 md:px-14 py-6">
       <header>
-        <span onClick={handleBack} className="iconHover">
+        <span onClick={handleBack} className="hidden md:flex iconHover">
           <Image src={"/icons/back.svg"} alt="back" width={22} height={22} />
         </span>
         <div className="text-sm breadcrumbs">
@@ -27,9 +27,9 @@ const LeftSide = ({ product }: Props) => {
           </ul>
         </div>
       </header>
-      <article className="mt-8 space-y-8">
+      <article className="mt-5 space-y-6">
         <h1>{product.title}</h1>
-        <div className="flex justify-between p-2 mt-5">
+        <div className="flex justify-between p-2">
           <span className="text-2xl text-dark_/80">{product.price}$</span>
 
           <div className="flex gap-x-3 items-center">
@@ -83,10 +83,10 @@ const LeftSide = ({ product }: Props) => {
           </div>
         </div>
 
-        <div className="flex items-center  gap-x-7">
+        <div className="flex items-center  gap-x-3 md:gap-x-7">
           <NumberInput />
 
-          <button className="btn bg-green_ px-10 text-white outline-none border-none hover:bg-green_/90 rounded-md">
+          <button className="btn bg-green_ px-6 md:px-10 text-white outline-none border-none hover:bg-green_/90 rounded-md">
             ADD TO CART
           </button>
         </div>

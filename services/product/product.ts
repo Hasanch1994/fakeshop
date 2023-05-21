@@ -12,7 +12,7 @@ export const get_all_products = async (): Promise<productType[]> => {
     const data: productType[] = await res.json();
     return data;
   } catch (error) {
-    throw error;
+    throw "failed to receive products";
   }
 };
 
@@ -27,6 +27,6 @@ export const get_single_product = async (
     const data: productType = await res.json();
     return data;
   } catch (error) {
-    throw error;
+    throw "failed to receive product";
   }
 };

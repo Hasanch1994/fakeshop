@@ -23,9 +23,9 @@ const data: sortType[] = [
 const SortProducts = () => {
   return (
     <div className="dropdown cursor-pointer">
-      <h2 tabIndex={0} className="m-1 bg-white rounded-lg p-2">
-        Sort By: <span className="text-dark_/60">Newest</span>
-      </h2>
+      <button tabIndex={0} className="m-1 bg-white rounded-lg p-2">
+        Sort By: <span className="text-dark_ font-medium">Newest</span>
+      </button>
       <ul
         tabIndex={0}
         className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-3"

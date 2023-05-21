@@ -25,11 +25,11 @@ export default async function Home() {
       {/* <input id="my-drawer-4" type="checkbox" className="drawer-toggle" /> */}
       {/* <div className="drawer-content"> */}
       <section className="w-full flex flex-col gap-y-8 px-2 md:px-28 py-8">
-        <header className="flex items-center gap-x-3">
+        <header className="w-full flex items-center justify-center md:justify-start gap-x-3">
           <SortProducts />
           <label htmlFor="my-drawer-4">
-            <div className="flex gap-x-3 m-1 bg-white rounded-lg p-2 cursor-pointer">
-              <h2 tabIndex={0}>Filter</h2>
+            <button className="flex gap-x-3 m-1 bg-white rounded-lg p-2 cursor-pointer">
+              Filter
               <span className="text-dark_/60">
                 <Image
                   src={`/icons/filter.svg`}
@@ -38,7 +38,7 @@ export default async function Home() {
                   alt="filter products"
                 />
               </span>
-            </div>
+            </button>
           </label>
         </header>
 

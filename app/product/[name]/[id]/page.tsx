@@ -1,8 +1,6 @@
 import LeftSide from "@/components/product/leftSide/LeftSide";
 import RightSide from "@/components/product/rightSide/RightSide";
 import { get_single_product } from "@/services/product/product";
-import Image from "next/image";
-import Link from "next/link";
 
 const Product = async ({
   params,
@@ -14,9 +12,8 @@ const Product = async ({
   }
 
   const product = await get_single_product(params.id);
-
   return (
-    <main className="flex min-h-screen pt-16 gap-x-6 bg-white">
+    <main className="flex flex-col md:flex-row min-h-screen pt-16 gap-x-6 bg-white">
       <LeftSide product={product} />
       <RightSide images={product.images} />
     </main>

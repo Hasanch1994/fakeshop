@@ -1,9 +1,7 @@
+import ProductItemSkeleton from "@/components/skeletons/ProductItemSkeleton";
+
 const ProductLoader = () => {
-  return (
-    <div className="w-full h-full flex justify-center items-center mt-16">
-      loading....
-    </div>
-  );
+  return <ProductItemSkeleton />;
 };
 
 export default ProductLoader;
