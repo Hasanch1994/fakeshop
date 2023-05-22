@@ -1,4 +1,3 @@
-"use client";
 import { productType } from "@/types/response";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,14 +7,14 @@ interface Props {
   product: productType;
 }
 const LeftSide = ({ product }: Props) => {
-  const handleBack = () => {
-    window.history.back();
-  };
+  // const handleBack = () => {
+  //   window.history.back();
+  // };
 
   return (
     <div className="flex flex-col gap-y-2 md:gap-y-5 w-full md:w-1/2 px-8 md:px-14 py-6">
       <header>
-        <span onClick={handleBack} className="hidden md:flex iconHover">
+        <span className="hidden md:flex iconHover">
           <Image src={"/icons/back.svg"} alt="back" width={22} height={22} />
         </span>
         <div className="text-sm breadcrumbs">
