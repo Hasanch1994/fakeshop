@@ -5,10 +5,7 @@ import { get_all_products } from "@/services/product/product";
 import SortProducts from "@/components/main/toolbars/SortProduct";
 import FilterProducts from "@/components/main/toolbars/filter/FilterProduct";
 import Image from "next/image";
-
-export const metadata = {
-  title: "Shopping",
-};
+import { Metadata } from "next";
 
 export default async function Home() {
   const productsData = get_all_products();
@@ -50,3 +47,8 @@ export default async function Home() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "gallery shop",
+  description: "we are the people and we present images",
+};
