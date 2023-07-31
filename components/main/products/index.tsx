@@ -8,7 +8,7 @@ interface Props {
 
 const Products = ({ data }: Props) => {
   return (
-    <section className="flex flex-wrap gap-y-6 md:gap-y-8 md:gap-x-8 w-full">
+    <section className="flex flex-wrap gap-y-6 md:gap-y-8 md:gap-x-8 w-full justify-center">
       {data && data.map((item) => <ProductItem key={item.id} item={item} />)}
     </section>
   );

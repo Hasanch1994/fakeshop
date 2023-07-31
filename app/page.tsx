@@ -25,7 +25,7 @@ export default async function Home() {
       {/* <input id="my-drawer-4" type="checkbox" className="drawer-toggle" /> */}
       {/* <div className="drawer-content"> */}
       <section className="w-full flex flex-col gap-y-8 px-2 md:px-28 py-8">
-        <header className="w-full flex items-center justify-center md:justify-start gap-x-3">
+        <header className="w-full flex items-center justify-center md:justify-center gap-x-3">
           <SortProducts />
           <label htmlFor="my-drawer-4">
             <button className="flex gap-x-3 m-1 bg-white rounded-lg p-2 cursor-pointer">
