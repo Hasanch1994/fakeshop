@@ -13,12 +13,12 @@ const RightSide = ({ images }: Props) => {
 
   return (
     <div className="flex flex-col space-y-5 w-full md:w-1/2 px-8 md:px-14 py-6 mb-9 mt-4">
-      <div className="flex-col relative w-full h-[450px] sm:h-[400px]  space-y-5 cursor-pointer">
+      <div className="flex-col relative 3xl:w-[850px] w-full 3xl:h-[650px] 2xl:h-[580px] xl:h-[550px] lg:h-[450px] sm:h-[400px]  space-y-5 cursor-pointer">
         <Image
           src={selectedImage}
           priority
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{objectFit:"cover"}}
           alt="product image"
           className="aspect-square opacity-1 ease-in-out"
         />
