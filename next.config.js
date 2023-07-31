@@ -2,7 +2,7 @@
 const nextConfig = {
   // output: "export",
   images: {
-    domains: ["picsum.photos", "api.escuelajs.co", "placeimg.com","www.metroecuador.com.ec","placeimg.co"],
+    domains: ["picsum.photos", "api.escuelajs.co", "placeimg.com","www.metroecuador.com.ec","placeimg.co","www.betterup.com"],
   },
 };
 

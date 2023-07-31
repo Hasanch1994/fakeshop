@@ -1,73 +1,58 @@
-import { Metadata } from 'next'
+import { Metadata } from "next";
+import Image from "next/image";
 
 const AboutUs = async () => {
   return (
-    <main className="w-full h-screen flex justify-center items-start lg:items-center pt-16">
-      <div className="2xl:w-[800px] lg:w-[750px] w-full flex flex-col p-6 bg-white lg:rounded-lg overflow-hidden gap-y-8">
-        <div className="flex flex-col gap-y-2">
-          <h1 className="text-xl text-neutral-800">We would love to help</h1>
-          <p className="text-neutral-600 text-base">
-            Reach out and we will get in touch within 24 hours
+    <main className="w-full h-screen flex justify-center items-start  pt-16">
+      <div className="w-full flex flex-col gap-y-16  items-center max-w-5xl">
+        <div className="mt-16 flex flex-col gap-y-6">
+          <h1 className="text-neutral-800 text">
+            Everything you need to get the attention of your audience
+          </h1>
+
+          <p className="text-neutral-500">
+            our digital agency helps clients develop,implement and maintain
+            successful digital marketing strategies across all channels{" "}
           </p>
         </div>
 
-        <form className="w-full flex flex-col gap-y-8">
-          <div className="flex flex-col gap-y-6 xl:gap-y-0 xl:flex-row justify-between">
-            <div className="flex flex-col gap-y-2">
-              <label className="text-neutral-700 text-base font-semibold">
-                First Name
-              </label>
-              <input
-                autoFocus
-                type="text"
-                className="input input-bordered  w-80"
-              />
-            </div>
+        <div className="relative 2xl:w-[800px] h-[558px] lg:w-[650px] w-full rounded-xl">
+          <Image
+            src={
+              "https://www.betterup.com/hubfs/Blog%20Images/Motivating%20a%20team/motivating-a-team-woman-at-meeting-smiling.jpg"
+            }
+            alt="team work"
+            className="rounded-xl"
+            fill
+          />
+        </div>
 
-            <div className="flex flex-col gap-y-2">
-              <label className="text-neutral-700 text-base font-semibold">
-                Last Name
-              </label>
-              <input
-                autoFocus
-                type="text"
-                className="input input-bordered   w-80"
-              />
-            </div>
-          </div>
-
-          <div className="flex w-full ">
-            <div className="flex flex-col gap-y-2 w-full">
-              <label className="text-neutral-700 text-base font-semibold">
-                Email
-              </label>
-              <input
-                autoFocus
-                type="email"
-                className="input input-bordered w-full"
-              />
-            </div>
-          </div>
-
-          <div className="flex w-full ">
-            <div className="flex flex-col gap-y-2 w-full">
-              <label className="text-neutral-700 text-base font-semibold">
-                Message
-              </label>
-              <textarea
-                rows={10}
-                className="input input-bordered w-full p-3 min-h-16"
-              />
-            </div>
-          </div>
-
-          <button type="submit" className="btn btn-success btn-block">
-            Submit
-          </button>
-        </form>
+        <p className="leading-10 text-neutral-700 2xl:text-base lg:text-sm text-xs">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+          laudantium fuga ex expedita adipisci iste exercitationem cupiditate
+          consectetur, rem quam unde explicabo debitis earum molestias
+          dignissimos perferendis aut sapiente sunt? Nam animi unde sed autem,
+          quidem eaque magnam ex alias repellendus maiores debitis non,
+          voluptatem expedita ullam beatae? Veniam accusantium odio quidem,
+          velit facere animi neque amet repellendus perferendis voluptatem.
+          Quibusdam laboriosam, nesciunt neque rem iste doloribus totam tempora
+          est quo animi? Deleniti quas quaerat in facere sunt quibusdam
+          voluptatibus vel sit delectus? Temporibus quidem rerum aspernatur
+          ipsum mollitia accusamus. Excepturi voluptates adipisci repellendus,
+          rem deserunt obcaecati. Ipsa atque deserunt, perferendis ad laboriosam
+          vel minus reprehenderit corporis harum at expedita possimus assumenda
+          asperiores? Vel, ad ea iure quam enim reprehenderit? Inventore,
+          maxime? Voluptatem soluta tempore dolorem unde ullam! Voluptatibus,
+          asperiores corporis? Assumenda incidunt, sapiente odit, ad dolore
+          quisquam vel magnam impedit ab delectus veritatis sunt suscipit. Quae
+          fugit quis nam?
+        </p>
       </div>
     </main>
   );
 };
 export default AboutUs;
 
+export const metadata: Metadata = {
+  title: "about us",
+};
