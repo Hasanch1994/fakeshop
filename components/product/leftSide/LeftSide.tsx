@@ -15,7 +15,9 @@ const LeftSide = ({ product }: Props) => {
     <div className="flex flex-col gap-y-2 md:gap-y-5 w-full md:w-1/2 px-8 md:px-14 py-6">
       <header>
         <span className="hidden md:flex iconHover">
-          <Image src={"/icons/back.svg"} alt="back" width={22} height={22} />
+          <Link href={"/"}>
+            <Image src={"/icons/back.svg"} alt="back" width={22} height={22} />
+          </Link>
         </span>
         <div className="text-sm breadcrumbs">
           <ul>
